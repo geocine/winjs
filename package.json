@@ -21,7 +21,8 @@
   ],
   "bugs": "https://github.com/winjs/winjs/issues",
   "scripts": {
-    "build:webpack": "webpack --config webpack.config.js"
+    "build:webpack": "webpack --config webpack.config.js",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@babel/core": "^7.22.20",
@@ -41,6 +42,7 @@
     "typescript": "1.4.1",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
-    "websocket": "^1.0.8"
+    "websocket": "^1.0.8",
+    "eslint": "^8.50.0"
   }
 }
