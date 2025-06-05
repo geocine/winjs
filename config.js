@@ -5,8 +5,7 @@
     var config = {};
     module.exports = config;
     
-    var grunt = require('grunt');
-    var pkg = grunt.file.readJSON("package.json");
+    var pkg = require("./package.json");
     // package.json version contains <major>.<minor>.<patch>. We just want <major>.<minor>
     var majorMinorVersion = pkg.version.split(".").splice(0, 2).join(".");
     
@@ -43,7 +42,7 @@
 
     config.lint = {
         srcFiles: ["src/**/*.js"],
-        buildFiles: ["gruntfile.js", "config.js", "tasks/**/*.js"]
+        buildFiles: ["config.js"]
     };
 
     // Object that aggregates the saucelabs test results that we report through our automation
