@@ -35,22 +35,15 @@ Change to the `winjs` directory:
 cd winjs
 ```
 
-Install the [grunt command-line interface](https://github.com/gruntjs/grunt-cli) globally:
-```
-npm install -g grunt-cli
-```
-
-Grunt dependencies are installed separately in each cloned git repo. Install the dependencies with:
+Install dependencies with:
 ```
 npm install
 ```
-
-Run the following and the WinJS JavaScript and CSS files will be put in the `bin` directory:
+Then build a UMD bundle using Webpack:
 ```
-grunt
+npm run build:webpack
 ```
-
-> **Note:** You may need to use sudo (for OSX, *nix, BSD etc) or run your command shell as Administrator (for Windows) to install Grunt globally.
+The output will be written to the `dist` folder.
 
 # Tests status
 Refer to http://winjs.azurewebsites.net/#status for the current status of the unit tests and the list of known issues.
